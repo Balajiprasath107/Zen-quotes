@@ -16,6 +16,7 @@ function randomcolor(){
 }
 
 async function generateQuote(){
+    try{
     const data = await fetch("https://api.quotable.io/quotes/random")
     let response = await data.json()
 
@@ -26,6 +27,9 @@ async function generateQuote(){
     container.style.color = rcolor
     document.getElementById('quote').innerText = (Object.entries(response)[0][1].content)
     document.getElementById('author').innerText = (Object.entries(response)[0][1].author)
+    }catch(error){
+        console.log(error)
+    }
 
 }
 
