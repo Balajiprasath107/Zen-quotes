@@ -25,8 +25,8 @@ async function generateQuote(){
     document.body.style.backgroundColor = rcolor
     
     container.style.color = rcolor
-    document.getElementById('quote').innerText = (Object.entries(response)[0][1].content)
-    document.getElementById('author').innerText = (Object.entries(response)[0][1].author)
+    document.getElementById('quote').innerText = (Object.entries(response)[1][1])
+    document.getElementById('author').innerText = (Object.entries(response)[2][1])
     }catch(error){
         console.log(error)
     }
