@@ -7,7 +7,7 @@ utilizes the api.quotable.io API to generate the quote.
 
 
 ## APIs Used
-- api.quotable.io API: Provides access to random quotes.
+- https://qapi.vercel.app/ API: Provides access to random quotes.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/Balajiprasath107/Zen-quotes/blob/main/LICENSE) file for details.
