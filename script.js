@@ -17,7 +17,7 @@ function randomcolor(){
 
 async function generateQuote(){
     try{
-    const data = await fetch("https://qapi.vercel.app/api/random")
+    const data = await fetch("https://quote-generator-api-six.vercel.app")
     let response = await data.json()
 
     let rcolor = randomcolor()
